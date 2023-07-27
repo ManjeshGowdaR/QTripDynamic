@@ -36,7 +36,7 @@ function addAdventureToDOM(adventures) {
     let ele = document.createElement("div");
     ele.className = "col-6 col-lg-3 mb-4";
     ele.innerHTML = `
-            <a href="detail/?adventures=${id}" id=${id}>
+            <a href="detail/?adventure=${id}" id=${id}>
               <div class="activity-card">
                 <div class="category-banner">${category}</div>
                 <img
@@ -44,14 +44,14 @@ function addAdventureToDOM(adventures) {
                   src=${image}
                 />
                 <div class="activity-card-text text-md-center w-100 mt-3 px-2">
-                 <div class="d-block d-md-flex justify-content-between flex-wrap pl-3 pr-3">
-                   <h5 class="text-left">${name}</h5>
-                   <p>₹${costPerHead}</p>
-                 </div>
-                   <div class="d-block d-md-flex justify-content-between flex-wrap pl-3 pr-3">
-                   <h5 class="text-left">Duration</h5>
-                   <p>${duration} Hours</p>
-                 </div>
+                  <div class="d-block d-md-flex justify-content-between flex-wrap pl-3 pr-3">
+                    <h5 class="text-left">${name}</h5>
+                    <p>₹${costPerHead}</p>
+                  </div>
+                    <div class="d-block d-md-flex justify-content-between flex-wrap pl-3 pr-3">
+                    <h5 class="text-left">Duration</h5>
+                    <p>${duration} Hours</p>
+                  </div>
                 </div>
               </div>
             </a>
